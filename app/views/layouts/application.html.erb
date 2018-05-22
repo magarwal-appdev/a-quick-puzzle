@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AQuickPuzzle</title>
+    <title>A Quick Puzzle</title>
     <%= csrf_meta_tags %>
 
     <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
@@ -27,7 +27,9 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container pt-5">
+      <%= yield %>
+    </div>
 
     <%= dev_tools if Rails.env.development? %>
   </body>
