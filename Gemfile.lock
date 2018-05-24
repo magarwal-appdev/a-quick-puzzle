@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/firstdraft/console_ip_whitelist.git
-  revision: 1af14f91522076488454c29d101aa8d544ce38f9
+  revision: 7ee6da47984855d9a39f5de1f20bd062f3eedcd5
   specs:
     console_ip_whitelist (0.1.0)
       rails
@@ -405,9 +405,6 @@ DEPENDENCIES
   web-console (>= 3.3.0)
   web_git!
   webmock
-
-RUBY VERSION
-   ruby 2.4.4p296
 
 BUNDLED WITH
    1.16.1
