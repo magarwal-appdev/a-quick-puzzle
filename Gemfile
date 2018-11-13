@@ -47,23 +47,23 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development, :test do
+  gem 'awesome_print'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'console_ip_whitelist', github: 'firstdraft/console_ip_whitelist'
   gem 'dotenv-rails'
+  gem 'draft_log', github: 'firstdraft/draft_log'
   gem 'grade_runner', github: 'firstdraft/grade_runner'
   gem 'pry-rails'
   gem 'web_git', github: 'firstdraft/web_git'
-  gem 'awesome_print'
 end
 
 group :development do
   gem 'annotate'
-  gem 'draft_log', github: 'firstdraft/draft_log'
-  gem 'better_errors'
-  gem 'binding_of_caller'
   gem 'dev_toolbar', github: 'firstdraft/dev_toolbar'
   gem 'draft_generators', github: 'firstdraft/draft_generators'
   gem 'letter_opener'
   gem 'meta_request'
-  gem 'console_ip_whitelist', github: 'firstdraft/console_ip_whitelist'
 end
 
 group :test do
