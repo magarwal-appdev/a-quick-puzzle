@@ -235,6 +235,7 @@ GEM
       octicons (= 8.1.2)
       rails
     orm_adapter (0.5.0)
+    pg (1.1.4)
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -265,6 +266,11 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.4)
       loofah (~> 2.2, >= 2.2.2)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (5.2.1)
       actionpack (= 5.2.1)
       activesupport (= 5.2.1)
@@ -390,9 +396,11 @@ DEPENDENCIES
   letter_opener
   listen (>= 3.0.5, < 3.2)
   meta_request
+  pg
   pry-rails
   puma (~> 3.11)
   rails (~> 5.2.0)
+  rails_12factor
   rspec-html-matchers
   rspec-rails
   sass-rails (~> 5.0)
@@ -406,4 +414,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   1.16.6
+   1.17.2

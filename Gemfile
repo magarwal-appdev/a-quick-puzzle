@@ -3,8 +3,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -55,6 +53,7 @@ group :development, :test do
   gem 'draft_log', github: 'firstdraft/draft_log'
   gem 'grade_runner', github: 'firstdraft/grade_runner'
   gem 'pry-rails'
+  gem 'sqlite3'
   gem 'web_git', github: 'firstdraft/web_git'
 end
 
@@ -72,6 +71,11 @@ group :test do
   gem 'rspec-rails'
   gem 'webmock'
   gem 'rspec-html-matchers'
+end
+
+group :production do
+  gem "pg"
+  gem "rails_12factor"
 end
 
 gem 'activeadmin'
